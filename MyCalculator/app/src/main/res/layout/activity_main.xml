@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.mrnobody.mycalculator.MainActivity"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+
+
+    <com.example.mrnobody.mycalculator.RightAlignedHorizontalScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="50dp"
+        android:gravity="left">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="25sp"
+        android:text="                                                     "
+        android:paddingRight="35dp"
+        style="?android:textAppearanceLarge"
+        android:layout_gravity="end"
+        android:paddingLeft="10dp"
+        android:id="@+id/intermediate"
+       />
+
+    </com.example.mrnobody.mycalculator.RightAlignedHorizontalScrollView>
+
+    <com.example.mrnobody.mycalculator.RightAlignedHorizontalScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end"
+       >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:gravity="end"
+        android:layout_gravity="end"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="35dp"
+        android:textColor="#26a624"
+        android:text="                        0"
+        style="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:id="@+id/edit_text_calc"/>
+
+    </com.example.mrnobody.mycalculator.RightAlignedHorizontalScrollView>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+        >
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="C"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="allDelete"
+        android:layout_height="fill_parent"
+       />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:text="sqt"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="squareRoot"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:text="x^2"
+        android:onClick="getSquare"
+        android:textSize="25sp"
+        android:layout_height="fill_parent"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="/"
+
+        android:onClick="onDivision"
+        android:textSize="25sp"
+        android:layout_height="fill_parent"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="setButtonTextCalculator"
+            android:text="9"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:onClick="onMultiplication"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="25sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:onClick="onAddition"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="onSubtraction"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_height="fill_parent"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:id="@+id/l5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:textColor="@android:color/white"
+
+            android:textSize="25sp"
+            android:onClick="deleteOneCharacter"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+
+            android:textColor="@android:color/white"
+            android:onClick="setButtonTextCalculator"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="."
+            android:textColor="@android:color/white"
+            android:onClick="pointValues"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="="
+            android:textColor="@android:color/white"
+            android:onClick="finalResult"
+            android:textSize="25sp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
